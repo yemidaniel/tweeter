@@ -1,0 +1,17 @@
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+
+  background-color: orange;
+
+  height: 400px;
+  width:100vw;
+
+  color: #FFFFFF;
+
+  background-image: url('../images/brick-wall-dark.png');
+}

@@ -1,6 +1,8 @@
 nav {
   display: flex;
   flex-direction: row;
+  align-items: center;
+  /*justify-content: center;*/
 
   height: 120px;
   width:100vw;
@@ -12,10 +14,15 @@ nav {
   padding-left: 1.5em;
 }
 
-span {
+.logo {
   font-family: 'Bungee', cursive;
+  /*align-self: flex-start;*/
 }
 
 .fa-angle-double-down {
   color: red;
 }
+/*
+.new-tweet {
+  align-self:flex-end;
+}*/
