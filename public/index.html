@@ -31,12 +31,12 @@
       <span class="logo">tweeter</span>
 
       <span class="new-tweet-container">
-        <span class="new-tweet"><b>Write</b> a new tweet</span>
+        <span class="nav-new-tweet"><b>Write</b> a new tweet</span>
         <span><i class="fas fa-angle-double-down"></i></span>
       </span>
     </nav>
 
-    <header>
+    <header class="main-header">
       <div>
           <img src="/images/profile-hex.png"> 
       </div>
@@ -54,7 +54,7 @@
           <form method="post" action="/tweets/">
             <label for="tweet-text"><h3>What are you humming about?</h3></label>
             <textarea name="text" id="tweet-text" placeholder="Hello world!"></textarea>
-            <hr class="rounded">
+            <hr>
             <div class="form-controls">
               <button class="submit-tweet" type="submit">Tweet</button>
               <output name="counter" class="counter" for="tweet-text">140</output>
@@ -62,9 +62,53 @@
           </form>
         </section>
 
-        <section id="tweet-history">
-          
+        <section class="tweet-container">
+          <p>tweet container</p>
+
+          <article>
+
+            <article class="tweet">
+              <header>
+                <h2><i class="fas fa-user"></i>&nbsp Rhoda Jacobs</h2>
+                <span>@MrsJacobs</span>
+              </header>
+              <p>Something light 1 2 3 4 5...</p>
+              <hr>
+              <footer>
+                <span>10 days ago</span>
+                <span>
+                  <i class="fas fa-retweet"></i>
+                  &nbsp;
+                  <i class="fas fa-flag"></i>
+                  &nbsp;
+                  <i class="fas fa-heart"></i>
+                </span>
+              </footer>
+            </article>
+
+            <article class="tweet">
+              <header>
+                <h2><i class="fas fa-user"></i>&nbsp Newton</h2>
+                <span>@SirIsaac</span>
+              </header>
+              <p>Something light 1 2 3 4 5...</p>
+              <hr>
+              <footer>
+                <span>10 days ago</span>
+                <span>
+                  <i class="fas fa-retweet"></i>
+                  &nbsp;
+                  <i class="fas fa-flag"></i>
+                  &nbsp;
+                  <i class="fas fa-heart"></i>
+                </span>
+              </footer>
+            </article>
+
+          </article>
+
         </section>
+
 
     </main>
   </body>

@@ -30,13 +30,33 @@ body {
 
  .container {
    display: flex;
+   flex-direction: column;
    justify-content: center;
-   
+   align-content: center;
+
    width: 90vw;
    align-self: center;
    border-style: double;
    border-color: red;
  }
+
+ .new-tweet {
+  width: 70vw;
+  align-self: center;
+  border-style: double;
+  border-color: rgb(6, 17, 6);
+  background-color: rgb(110, 255, 105);
+  padding-right: 1.5em;
+  padding-left: 1.5em;
+ }
+
+.tweet-container {
+  width: 70vw;
+  align-self: center;
+  border-style: double;
+  border-color: green;
+  background-color: hotpink;
+}
 
  .submit-tweet {
   font-family: 'Bungee', cursive;
@@ -59,10 +79,55 @@ body {
   flex-direction: column;
   border-style: double;
   border-color: red;
-  min-width: 40vw;
-  max-width: 90vw;
+  padding-right: 1.5em;
+  padding-left: 1.5em;
+  padding-bottom: 1.5em;
+  /*min-width: 40vw;
+  max-width: 90vw;*/
  }
 
  textarea {
    height: 100px;
  }
+
+ .tweet {
+  border-style:solid;
+  border-color:midnightblue;
+  padding-right: 1.5em;
+  padding-left: 1.5em;
+  padding-bottom: 1.0em;
+  margin: 1.5em;
+ }
+
+ article.tweet footer{
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: space-between;
+ }
+
+ article.tweet header{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+article.tweet header span {
+  font-weight: bold;
+  color: aqua;
+}
+
+ .tweet:hover {
+  box-shadow: 8px 8px 16px #13d7e9;
+}
+
+.fa-retweet:hover, .fa-flag:hover, .fa-heart:hover {
+  color: rgba(18, 241, 29, 0.822);
+}
+
+hr {
+  border:2px solid brown;
+  border-radius: 5px;
+  width: 100%;
+}
