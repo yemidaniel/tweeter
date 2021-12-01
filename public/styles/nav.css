@@ -12,6 +12,9 @@ nav {
   
   padding-right: 1.5em;
   padding-left: 1.5em;
+
+  border-style: double;
+  border-color: red;
 }
 
 .logo {

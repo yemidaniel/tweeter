@@ -15,6 +15,9 @@ html {
  */
 
 body {
+  display: flex;
+  flex-direction: column;
+
   color: #545149;
   background-color: #f4f1ec;
   font-size: 24px;
@@ -27,7 +30,39 @@ body {
 
  .container {
    display: flex;
+   justify-content: center;
    
    width: 90vw;
    align-self: center;
+   border-style: double;
+   border-color: red;
+ }
+
+ .submit-tweet {
+  font-family: 'Bungee', cursive;
+  background-color: #4056A1;
+  color: #FFFFFF;
+ }
+
+ .counter {
+  font-family: 'Bungee', cursive;
+ }
+
+ .form-controls {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+ }
+
+ form {
+  display: flex;
+  flex-direction: column;
+  border-style: double;
+  border-color: red;
+  min-width: 40vw;
+  max-width: 90vw;
+ }
+
+ textarea {
+   height: 100px;
  }

@@ -14,4 +14,7 @@ header {
   color: #FFFFFF;
 
   background-image: url('../images/brick-wall-dark.png');
+
+  border-style: double;
+  border-color: blueviolet;
 }
