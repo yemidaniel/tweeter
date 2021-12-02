@@ -1,5 +1,6 @@
 
 .main-header {
+  margin-top: 120px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -9,7 +10,7 @@
   background-color: orange;
 
   height: 400px;
-  width:100vw;
+  width:100%;
 
   color: #FFFFFF;
 
