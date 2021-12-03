@@ -6,9 +6,7 @@
 
 let createTweetElement = function(tweetData) {
 
-  const $tweet = $(`<article class="tweet">Hello world</article>`);
-
-  const $holdTweet = $(`
+  const $tweet = $(`
   <article class="tweet">
     <header>
       <h2><img src="${tweetData.user.avatars}"></i>&nbsp ${tweetData.user.name}</h2>
@@ -29,9 +27,9 @@ let createTweetElement = function(tweetData) {
   </article>
   `);
 
-  console.log('testing call to createTweetElement');
+  // console.log('testing call to createTweetElement');
 
-  return $holdTweet;
+  return $tweet;
 };
 
 let createTweetElementTest = function() {
@@ -56,8 +54,10 @@ let createTweetElementTest = function() {
 
 $(document).ready(function() {
 
-  console.log('client.js: page loaded!!!');
-  console.log(createTweetElementTest());
+  // console.log('client.js: page loaded!!!');
+  // console.log(createTweetElementTest());
+
+  $('.tweet-container').append(createTweetElementTest());
 
 });
 
