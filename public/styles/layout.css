@@ -64,8 +64,12 @@ body {
   color: #FFFFFF;
  }
 
- .counter {
+ .counter, .counter-red {
   font-family: 'Bungee', cursive;
+ }
+
+ .counter-red {
+  color:red;
  }
 
  .form-controls {
