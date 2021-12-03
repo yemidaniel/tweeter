@@ -18,7 +18,7 @@ $(document).ready(function() {
     } else {
       document.getElementById("text-counter").className = "counter";
       //console.log("normal", charactersRemaining);
-    };
+    }
 
     document.getElementById("text-counter").innerHTML = charactersRemaining;
 
