@@ -67,9 +67,20 @@ $(document).ready(function() {
     }
   
   };
-  renderTweets(data);
+  //renderTweets(data);
 
-  
+
+  let loadTweets = function() {
+
+    $.ajax({url: 'http://127.0.0.1:8080/tweets/', method: 'GET'})
+      .then(function(results) {
+        // console.log("preparing to load tweets", results);
+        renderTweets(results);
+      });
+
+  };
+  loadTweets();
+
   const $newTweetform = $('#new-tweet-form');
   $newTweetform.submit(function(event) {
     event.preventDefault();
