@@ -38,11 +38,10 @@ $(document).ready(function() {
 
     for (let tweet of tweets) {
       const $element = createTweetElement(tweet);
-      $('.tweet-container').append($element);
+      $('.tweet-container').prepend($element);
     }
   
   };
-  //renderTweets(data);
 
 
   let loadTweets = function() {
@@ -55,6 +54,19 @@ $(document).ready(function() {
 
   };
   loadTweets();
+
+  
+  let loadLatestTweet = function() {
+    console.log('load latest tweet called');
+    $.ajax({url: 'http://127.0.0.1:8080/tweets/', method: 'GET'})
+      .then(function(results) {
+        let lastTweet = [];
+        lastTweet.push(results[results.length - 1]);
+        renderTweets(lastTweet);
+      });
+
+  };
+
 
   const $newTweetform = $('#new-tweet-form');
   $newTweetform.submit(function(event) {
@@ -79,6 +91,8 @@ $(document).ready(function() {
       $.ajax({url: "/tweets/", method: 'POST', data: theData })
         .then(function() {
           console.log(theData);
+
+          loadLatestTweet();
         });
     }
 
