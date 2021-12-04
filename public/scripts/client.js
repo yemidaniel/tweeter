@@ -4,18 +4,24 @@
  * Reminder: Use (and do all your DOM work in) jQuery's document ready function
  */
 $(document).ready(function() {
-  console.log("document ready");
+  //console.log("document ready");
   
+  let escape = function (str) {
+    let div = document.createElement("div");
+    div.appendChild(document.createTextNode(str));
+    return div.innerHTML;
+  };
+
   let createTweetElement = function(tweetData) {
-    console.log("called createTweetElement");
-  
+    let safeUserInput = escape(tweetData.content.text);
+
     const $tweet = $(`
     <article class="tweet">
       <header>
         <h2><img src="${tweetData.user.avatars}"></i>&nbsp ${tweetData.user.name}</h2>
         <span>${tweetData.user.handle}</span>
       </header>
-      <p>${tweetData.content.text}</p>
+      <p>${safeUserInput}</p>
       <hr>
       <footer>
         <span>${tweetData.created_at}</span>
@@ -34,7 +40,7 @@ $(document).ready(function() {
   };
   
   let renderTweets = function(tweets) {
-    console.log("called renderTweets");
+    //console.log("called renderTweets");
 
     for (let tweet of tweets) {
       const $element = createTweetElement(tweet);
@@ -57,7 +63,7 @@ $(document).ready(function() {
 
   
   let loadLatestTweet = function() {
-    console.log('load latest tweet called');
+    //console.log('load latest tweet called');
     $.ajax({url: 'http://127.0.0.1:8080/tweets/', method: 'GET'})
       .then(function(results) {
         let lastTweet = [];
@@ -90,8 +96,10 @@ $(document).ready(function() {
 
       $.ajax({url: "/tweets/", method: 'POST', data: theData })
         .then(function() {
-          console.log(theData);
+          //console.log(theData);
 
+          // $('.tweet-container').empty();
+          // loadTweets();
           loadLatestTweet();
         });
     }
