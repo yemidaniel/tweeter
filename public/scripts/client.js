@@ -84,14 +84,21 @@ $(document).ready(function() {
 
     if (tweetText.length === min) {
 
-      alert("Tweet content too short. Please enter a message.");
+      //alert("Tweet content too short. Please enter a message.");
+      $("#validation-msg").text("Tweet content too short. Please enter a message.");
+      $("#tweet-validation").slideUp();
+      $("#tweet-validation").slideDown();
 
     } else if (tweetText.length > max) {
 
-      alert(`Tweet content too long. Please limit your message to a maxumum of ${max} characters.`);
+      //alert(`Tweet content too long. Please limit your message to a maxumum of ${max} characters.`);
+      $("#validation-msg").text(`Tweet content too long. Please limit your message to a maxumum of ${max} characters.`);
+      $("#tweet-validation").slideUp();
+      $("#tweet-validation").slideDown();
 
     } else {
 
+      $("#tweet-validation").slideUp();
       let theData = $newTweetform.serialize();
 
       $.ajax({url: "/tweets/", method: 'POST', data: theData })
