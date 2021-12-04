@@ -27,13 +27,20 @@ module.exports = {
       userHandle += suffix;
     }
    
+    // const avatars = {
+    
+    //   Female: ["https://i.imgur.com/nlhLi3I.png","https://i.imgur.com/z5LNkkB.png","https://i.imgur.com/v0JXau2.png","https://i.imgur.com/lRUnDgU.png", "https://i.imgur.com/3GvwNBf.png"],
+    //   Male: ["https://i.imgur.com/73hZDYK.png","https://i.imgur.com/5fUVPRP.png","https://i.imgur.com/DVpDmdR.png","https://i.imgur.com/2WZtOD6.png", "https://i.imgur.com/ilT4JDe.png"]
+    
+    // }
+    
     const avatars = {
     
-      Female: ["https://i.imgur.com/nlhLi3I.png","https://i.imgur.com/z5LNkkB.png","https://i.imgur.com/v0JXau2.png","https://i.imgur.com/lRUnDgU.png", "https://i.imgur.com/3GvwNBf.png"],
-      Male: ["https://i.imgur.com/73hZDYK.png","https://i.imgur.com/5fUVPRP.png","https://i.imgur.com/DVpDmdR.png","https://i.imgur.com/2WZtOD6.png", "https://i.imgur.com/ilT4JDe.png"]
+      Female: ["/images/nlhLi3I.png","/images/z5LNkkB.png","/images/v0JXau2.png","/images/lRUnDgU.png", "/images/3GvwNBf.png"],
+      Male: ["/images/73hZDYK.png","/images/5fUVPRP.png","/images/DVpDmdR.png","/images/2WZtOD6.png", "/images/ilT4JDe.png"]
     
     }
-    
+
     const avatarArray = avatars[gender]
     const userAvatar = avatarArray[Math.floor(Math.random()*avatarArray.length)]
   

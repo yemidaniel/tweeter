@@ -136,3 +136,7 @@ hr {
   border-radius: 5px;
   width: 100%;
 }
+
+p {
+  word-wrap: break-word;
+}
