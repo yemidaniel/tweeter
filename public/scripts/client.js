@@ -14,6 +14,7 @@ $(document).ready(function() {
 
   let createTweetElement = function(tweetData) {
     let safeUserInput = escape(tweetData.content.text);
+    let createdAt = timeago.format(Number(tweetData.created_at));
 
     const $tweet = $(`
     <article class="tweet">
@@ -24,7 +25,7 @@ $(document).ready(function() {
       <p>${safeUserInput}</p>
       <hr>
       <footer>
-        <span>${tweetData.created_at}</span>
+        <span class="render-time">${createdAt}</span>
         <span>
           <i class="fas fa-retweet"></i>
           &nbsp;
@@ -113,5 +114,4 @@ $(document).ready(function() {
 
 
   });
-
 });
