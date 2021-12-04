@@ -5,31 +5,6 @@
  */
 $(document).ready(function() {
   console.log("document ready");
-
-  const data = [
-    {
-      "user": {
-        "name": "Newton",
-        "avatars": "images/73hZDYK.png"
-        ,
-        "handle": "@SirIsaac"
-      },
-      "content": {
-        "text": "If I have seen further it is by standing on the shoulders of giants"
-      },
-      "created_at": 1461116232227
-    },
-    {
-      "user": {
-        "name": "Descartes",
-        "avatars": "images/nlhLi3I.png",
-        "handle": "@rd" },
-      "content": {
-        "text": "Je pense , donc je suis"
-      },
-      "created_at": 1461113959088
-    }
-  ];
   
   let createTweetElement = function(tweetData) {
     console.log("called createTweetElement");
@@ -84,12 +59,29 @@ $(document).ready(function() {
   const $newTweetform = $('#new-tweet-form');
   $newTweetform.submit(function(event) {
     event.preventDefault();
-    
-    let theData = $newTweetform.serialize();
-    $.ajax({url: "/tweets/", method: 'POST', data: theData })
-      .then(function() {
-        console.log(theData);
-      });
+
+    let min = 0;
+    let max = 140;
+    let tweetText = document.getElementById("tweet-text").value;
+
+    if (tweetText.length === min) {
+
+      alert("Tweet content too short. Please enter a message.");
+
+    } else if (tweetText.length > max) {
+
+      alert(`Tweet content too long. Please limit your message to a maxumum of ${max} characters.`);
+
+    } else {
+
+      let theData = $newTweetform.serialize();
+
+      $.ajax({url: "/tweets/", method: 'POST', data: theData })
+        .then(function() {
+          console.log(theData);
+        });
+    }
+
 
   });
 
