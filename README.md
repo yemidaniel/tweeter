@@ -4,6 +4,10 @@ Tweeter is a simple, single-page Twitter clone.
 
 A single page AJAX-based Twitter clone implemented with jQuery, HTML5, CSS, JavaScript and Node.
 
+## Screenshots
+!["Screenshot of tweet compose box"](https://github.com/yemidaniel/tweeter/blob/master/docs/tweet-box.JPG?raw=true)
+!["Screenshot of tweets"](https://github.com/yemidaniel/tweeter/blob/master/docs/tweets.JPG?raw=true)
+
 ## Getting Started
 
 1. [Create](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template) a new repository using this repository as a template.
