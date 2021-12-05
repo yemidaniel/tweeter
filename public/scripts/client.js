@@ -101,6 +101,7 @@ $(document).ready(function() {
         .then(function() {
           $('#tweet-text').val("");
           loadLatestTweet();
+          $("#text-counter").val("0");
         });
     }
 
