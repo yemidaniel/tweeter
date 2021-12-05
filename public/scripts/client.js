@@ -4,7 +4,6 @@
  * Reminder: Use (and do all your DOM work in) jQuery's document ready function
  */
 $(document).ready(function() {
-  //console.log("document ready");
   
   let escape = function (str) {
     let div = document.createElement("div");
@@ -41,7 +40,6 @@ $(document).ready(function() {
   };
   
   let renderTweets = function(tweets) {
-    //console.log("called renderTweets");
 
     for (let tweet of tweets) {
       const $element = createTweetElement(tweet);
@@ -55,7 +53,6 @@ $(document).ready(function() {
 
     $.ajax({url: 'http://127.0.0.1:8080/tweets/', method: 'GET'})
       .then(function(results) {
-        // console.log("preparing to load tweets", results);
         renderTweets(results);
       });
 
@@ -64,7 +61,7 @@ $(document).ready(function() {
 
   
   let loadLatestTweet = function() {
-    //console.log('load latest tweet called');
+
     $.ajax({url: 'http://127.0.0.1:8080/tweets/', method: 'GET'})
       .then(function(results) {
         let lastTweet = [];
@@ -81,7 +78,7 @@ $(document).ready(function() {
 
     let min = 0;
     let max = 140;
-    let tweetText = document.getElementById("tweet-text").value;
+    let tweetText = $('#tweet-text').val();
 
     if (tweetText.length === min) {
 
@@ -106,7 +103,6 @@ $(document).ready(function() {
           loadLatestTweet();
         });
     }
-
 
   });
 });

@@ -9,4 +9,9 @@
   width: 100%;
   color: #FFFFFF;
   background-image: url("/images/brick-wall-dark.png");
+  font-size: 32px;
+}
+
+.first-name {
+  font-weight: bold;
 }

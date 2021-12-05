@@ -14,16 +14,13 @@ nav {
   border-style: double;
   border-color: red;
 }
-
-.logo {
+nav .logo {
   font-family: "Bungee", cursive;
 }
-
-.fa-angle-double-down {
+nav .fa-angle-double-down {
   color: red;
 }
-
-.new-tweet-container {
+nav .new-tweet-container {
   display: flex;
   flex-direction: column;
   align-items: center;

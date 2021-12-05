@@ -22,18 +22,21 @@ nav {
 
   border-style: double;
   border-color: $navArrowColor;
+
+  .logo {
+    font-family: $navFont;
+  }
+
+  .fa-angle-double-down {
+    color: $navArrowColor;
+  }
+
+  .new-tweet-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
-.logo {
-  font-family: $navFont;
-}
 
-.fa-angle-double-down {
-  color: $navArrowColor;
-}
 
-.new-tweet-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
