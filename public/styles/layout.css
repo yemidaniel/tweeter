@@ -72,8 +72,6 @@ body {
 form {
   display: flex;
   flex-direction: column;
-  border-style: double;
-  border-color: red;
   padding-right: 1.5em;
   padding-left: 1.5em;
   padding-bottom: 1.5em;

@@ -102,9 +102,7 @@ $(document).ready(function() {
 
       $.ajax({url: "/tweets/", method: 'POST', data: theData })
         .then(function() {
-          //console.log(theData);
-          // $('.tweet-container').empty();
-          // loadTweets();
+          $('#tweet-text').val("");
           loadLatestTweet();
         });
     }
