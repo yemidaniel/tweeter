@@ -1,0 +1,22 @@
+$headerBackColor: orange;
+$headerTextColor: #FFFFFF;
+
+.main-header {
+  margin-top: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background-color: $headerBackColor;
+
+  height: 400px;
+  width:100%;
+
+  color: $headerTextColor;
+
+  background-image: url('/images/brick-wall-dark.png');
+
+  // border-style: double;
+  // border-color: blueviolet;
+}

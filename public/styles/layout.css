@@ -6,6 +6,7 @@
 html {
   box-sizing: border-box;
 }
+
 *, *:before, *:after {
   box-sizing: inherit;
 }
@@ -13,72 +14,62 @@ html {
 /*
  * Global layout stuff
  */
-
 body {
   display: flex;
   flex-direction: column;
-
   color: #545149;
   background-color: #f4f1ec;
   font-size: 24px;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
+  /* min-width: 600px; */
+  /* max-width: 600px; */
 }
 
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  width: 90vw;
+  align-self: center;
+}
 
- .container {
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-content: center;
-
-   width: 90vw;
-   align-self: center;
-   border-style: double;
-   border-color: red;
- }
-
- .new-tweet {
+.new-tweet {
   width: 70vw;
   align-self: center;
-  border-style: double;
-  border-color: rgb(6, 17, 6);
-  background-color: rgb(110, 255, 105);
   padding-right: 1.5em;
   padding-left: 1.5em;
- }
+}
 
 .tweet-container {
   width: 70vw;
   align-self: center;
-  border-style: double;
-  border-color: green;
-  background-color: hotpink;
 }
 
- .submit-tweet {
-  font-family: 'Bungee', cursive;
+.submit-tweet {
+  font-family: "Bungee", cursive;
   background-color: #4056A1;
   color: #FFFFFF;
- }
+}
 
- .counter, .counter-red {
-  font-family: 'Bungee', cursive;
- }
+.counter, .counter-red {
+  font-family: "Bungee", cursive;
+}
 
- .counter-red {
-  color:red;
- }
+.counter-red {
+  color: red;
+}
 
- .form-controls {
-   display: flex;
-   flex-direction: row;
-   justify-content: space-between;
- }
+.form-controls {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
 
- form {
+form {
   display: flex;
   flex-direction: column;
   border-style: double;
@@ -89,29 +80,29 @@ body {
   padding-top: 0.5em;
   /*min-width: 40vw;
   max-width: 90vw;*/
- }
+}
 
- textarea {
-   height: 100px;
- }
+textarea {
+  height: 100px;
+}
 
- .tweet {
-  border-style:solid;
-  border-color:midnightblue;
+.tweet {
+  border-style: solid;
+  border-color: midnightblue;
   padding-right: 1.5em;
   padding-left: 1.5em;
-  padding-bottom: 1.0em;
+  padding-bottom: 1em;
   margin: 1.5em;
- }
+}
 
- article.tweet footer{
-   display: flex;
-   flex-direction: row;
-   align-items: center;
-   justify-content: space-between;
- }
+article.tweet footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
 
- article.tweet header{
+article.tweet header {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -120,19 +111,19 @@ body {
 
 article.tweet header span {
   font-weight: bold;
-  color: aqua;
+  color: black;
 }
 
- .tweet:hover {
+.tweet:hover {
   box-shadow: 8px 8px 16px #13d7e9;
 }
 
 .fa-retweet:hover, .fa-flag:hover, .fa-heart:hover {
-  color: rgba(18, 241, 29, 0.822);
+  color: rgba(18, 33, 241, 0.822);
 }
 
 hr {
-  border:2px solid brown;
+  border: 2px solid brown;
   border-radius: 5px;
   width: 100%;
 }

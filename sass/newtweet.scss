@@ -1,8 +1,12 @@
+$errorAlertBackColor: #FFCCBA;
+$errorAlertTextColor: #D63301;
+
 .validation {
-  color: #D63301;
-  background-color: #FFCCBA;
+  color: $errorAlertTextColor;
+  background-color: $errorAlertBackColor;
   border-radius: 7.5px;
   text-align: center;
+
   padding-right: 0.5em;
   padding-left: 0.5em;
   padding-top: 0.5em;

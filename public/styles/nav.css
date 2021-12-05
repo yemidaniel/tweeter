@@ -2,25 +2,21 @@ nav {
   position: fixed;
   top: 0;
   height: 120px;
-  width:100%;
-
+  width: 100%;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-
   background-color: #4056A1;
   color: #FFFFFF;
-  
   padding-right: 1.5em;
   padding-left: 1.5em;
-
   border-style: double;
   border-color: red;
 }
 
 .logo {
-  font-family: 'Bungee', cursive;
+  font-family: "Bungee", cursive;
 }
 
 .fa-angle-double-down {

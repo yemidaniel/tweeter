@@ -1,3 +1,8 @@
+$navPrimaryColor: #4056A1;
+$navTextColor: #FFFFFF;
+$navArrowColor: red;
+$navFont: 'Bungee', cursive;
+
 nav {
   position: fixed;
   top: 0;
@@ -9,22 +14,22 @@ nav {
   align-items: center;
   justify-content: space-between;
 
-  background-color: #4056A1;
-  color: #FFFFFF;
+  background-color: $navPrimaryColor;
+  color: $navTextColor;
   
   padding-right: 1.5em;
   padding-left: 1.5em;
 
   border-style: double;
-  border-color: red;
+  border-color: $navArrowColor;
 }
 
 .logo {
-  font-family: 'Bungee', cursive;
+  font-family: $navFont;
 }
 
 .fa-angle-double-down {
-  color: red;
+  color: $navArrowColor;
 }
 
 .new-tweet-container {
