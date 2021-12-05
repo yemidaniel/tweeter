@@ -26,9 +26,9 @@ $(document).ready(function() {
       <footer>
         <span class="render-time">${createdAt}</span>
         <span>
-          <i class="fas fa-retweet"></i>
+        <i class="fas fa-flag"></i>
           &nbsp;
-          <i class="fas fa-flag"></i>
+          <i class="fas fa-retweet"></i>
           &nbsp;
           <i class="fas fa-heart"></i>
         </span>
