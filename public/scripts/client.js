@@ -106,4 +106,21 @@ $(document).ready(function() {
     }
 
   });
+
+  const $newTweetContainer = $('.new-tweet-container');
+  $newTweetContainer.click(function() {
+
+    if ($("#new-tweet-form").is(":hidden")) {
+
+      $("#new-tweet-form").slideDown();
+      $("#tweet-text").focus();
+
+    } else {
+      
+      $("#new-tweet-form").slideUp();
+    }
+
+  });
+
+
 });
