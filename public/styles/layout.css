@@ -83,12 +83,17 @@ form {
 }
 
 textarea {
+  margin-top: 1.5em;
   height: 100px;
+  background: transparent;
+  resize: none;
+  border: none;
+  font-weight: bold;
 }
 
 .tweet {
   border-style: solid;
-  border-color: midnightblue;
+  border-color: #545149;
   padding-right: 1.5em;
   padding-left: 1.5em;
   padding-bottom: 1em;
@@ -115,7 +120,7 @@ article.tweet header span {
 }
 
 .tweet:hover {
-  box-shadow: 8px 8px 16px #13d7e9;
+  box-shadow: 8px 8px 16px #545149;
 }
 
 .fa-retweet:hover, .fa-flag:hover, .fa-heart:hover {
@@ -123,11 +128,31 @@ article.tweet header span {
 }
 
 hr {
-  border: 2px solid brown;
+  border: 2px solid #545149;
   border-radius: 5px;
   width: 100%;
 }
 
 p {
   word-wrap: break-word;
+}
+
+.validation {
+  color: #D63301;
+  background-color: #FFCCBA;
+  border-radius: 7.5px;
+  text-align: center;
+  padding-right: 0.5em;
+  padding-left: 0.5em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  /* background-image: url('/images/error.png'); */
+}
+
+.render-time, .user-message {
+  font-weight: bold;
+}
+
+.render-time {
+  font-size: 18px;
 }

@@ -22,7 +22,7 @@ $(document).ready(function() {
         <h2><img src="${tweetData.user.avatars}"></i>&nbsp ${tweetData.user.name}</h2>
         <span>${tweetData.user.handle}</span>
       </header>
-      <p>${safeUserInput}</p>
+      <p class="user-message">${safeUserInput}</p>
       <hr>
       <footer>
         <span class="render-time">${createdAt}</span>

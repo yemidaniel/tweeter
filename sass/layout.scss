@@ -3,6 +3,12 @@
  * https://css-tricks.com/international-box-sizing-awareness-day/
  * Do not modify these two selectors, please
  */
+
+$primaryTextColor: #545149;
+$primaryBackColor: #f4f1ec;
+$errorAlertBackColor: #FFCCBA;
+$errorAlertTextColor: #D63301;
+
 html {
   box-sizing: border-box;
 }
@@ -18,8 +24,8 @@ body {
   display: flex;
   flex-direction: column;
 
-  color: #545149;
-  background-color: #f4f1ec;
+  color: $primaryTextColor;
+  background-color: $primaryBackColor;
   font-size: 24px;
   font-family: 'Source Sans Pro', sans-serif;
   
@@ -98,12 +104,17 @@ body {
  }
 
  textarea {
+   margin-top: 1.5em;
    height: 100px;
+   background: transparent;
+   resize: none;
+   border: none;
+   font-weight: bold;
  }
 
  .tweet {
   border-style:solid;
-  border-color:midnightblue;
+  border-color: $primaryTextColor;
   padding-right: 1.5em;
   padding-left: 1.5em;
   padding-bottom: 1.0em;
@@ -130,7 +141,7 @@ article.tweet header span {
 }
 
  .tweet:hover {
-  box-shadow: 8px 8px 16px #13d7e9;
+  box-shadow: 8px 8px 16px $primaryTextColor;
 }
 
 .fa-retweet:hover, .fa-flag:hover, .fa-heart:hover {
@@ -138,7 +149,7 @@ article.tweet header span {
 }
 
 hr {
-  border:2px solid brown;
+  border:2px solid $primaryTextColor;
   border-radius: 5px;
   width: 100%;
 }
@@ -146,3 +157,25 @@ hr {
 p {
   word-wrap: break-word;
 }
+
+.validation {
+  color: $errorAlertTextColor;
+  background-color: $errorAlertBackColor;
+  border-radius: 7.5px;
+  text-align: center;
+
+  padding-right: 0.5em;
+  padding-left: 0.5em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  /* background-image: url('/images/error.png'); */
+}
+
+.render-time, .user-message {
+  font-weight: bold;
+}
+
+.render-time {
+  font-size: 18px;
+}
+
