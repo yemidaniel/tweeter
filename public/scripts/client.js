@@ -116,11 +116,31 @@ $(document).ready(function() {
       $("#tweet-text").focus();
 
     } else {
-      
+
       $("#new-tweet-form").slideUp();
     }
 
   });
 
+  //Get the button:
+  const $backToTop = $('#back-to-top');
+  let topBtn = document.getElementById("back-to-top");
+
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function() {
+    scrollFunction();
+  };
+
+  let scrollFunction = function() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      $backToTop.show();
+    } else {
+      $backToTop.hide();
+    }
+  };
+
+  $backToTop.click(function() {
+    window.scrollTo(0,0);  //x,y axis
+  });
 
 });

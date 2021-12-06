@@ -8,6 +8,7 @@ $primaryTextColor: #545149;
 $primaryBackColor: #f4f1ec;
 $errorAlertBackColor: #FFCCBA;
 $errorAlertTextColor: #D63301;
+$navPrimaryColor: #4056A1;
 
 $primaryFont:'Bungee', cursive;
 $secondaryFont: 'Source Sans Pro', sans-serif;
@@ -163,4 +164,20 @@ p {
 
 .render-time {
   font-size: 18px;
+}
+
+#back-to-top {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: $navPrimaryColor; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 5.0px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
 }
