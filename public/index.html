@@ -42,39 +42,44 @@
       </span>
     </nav>
 
-    <header class="main-header">
-      <div>
-          <img src="/images/profile-hex.png">
-      </div>
-      <br>
-      <div>
-          <span><span class="first-name">Ola</span> Daniel</span>
-      </div>
-    </header>
-  
-    <!-- Page-specific (main) content here -->
-    <main class="container">
+    <div class="flex-container">
 
-        <section class="new-tweet">
-          <!-- <h2>Compose Tweet</h2> -->
-          <form id="new-tweet-form">
-            <div id="tweet-validation" class="validation" hidden="true">
-              <span><img src="/images/error.png"/></span>
-              <span id="validation-msg"></span>
-              <span><img src="/images/error.png"/></span>
-            </div>
-            <textarea name="text" id="tweet-text" placeholder="What are you humming about?"></textarea>
-            <hr>
-            <div class="form-controls">
-              <button id="sendTweet" class="submit-tweet" type="submit">Tweet</button>
-              <output id="text-counter" name="counter" class="counter" for="tweet-text">140</output>
-            </div>
-          </form>
-        </section>
+      <header class="main-header">
+        <div>
+            <img src="/images/profile-hex.png">
+        </div>
+        <br>
+        <div>
+            <span><span class="first-name">Ola</span> Daniel</span>
+        </div>
+      </header>
+    
+      <!-- Page-specific (main) content here -->
+      <main class="container">
 
-        <section class="tweet-container"></section>
+          <section class="new-tweet">
+            <!-- <h2>Compose Tweet</h2> -->
+            <form id="new-tweet-form">
+              <div id="tweet-validation" class="validation" hidden="true">
+                <span><img src="/images/error.png"/></span>
+                <span id="validation-msg"></span>
+                <span><img src="/images/error.png"/></span>
+              </div>
+              <textarea name="text" id="tweet-text" placeholder="What are you humming about?"></textarea>
+              <hr>
+              <div class="form-controls">
+                <button id="sendTweet" class="submit-tweet" type="submit">Tweet</button>
+                <output id="text-counter" name="counter" class="counter" for="tweet-text">140</output>
+              </div>
+            </form>
+          </section>
 
-        <button id="back-to-top">Top</button> 
-    </main>
+          <section class="tweet-container"></section>
+
+          <button id="back-to-top">Top</button> 
+      </main>
+
+    </div>
+    
   </body>
 </html>
