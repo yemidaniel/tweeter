@@ -6,7 +6,7 @@
   background-color: orange;
   height: 400px;
   width: 100%;
-  margin: 1.5em;
+  margin: 0.5em;
   color: #FFFFFF;
   background-image: url("/images/brick-wall-dark.png");
   font-size: 32px;
@@ -14,4 +14,10 @@
 
 .first-name {
   font-weight: bold;
+}
+
+@media (max-width: 800px) {
+  .main-header {
+    margin: 0em;
+  }
 }

@@ -12,7 +12,7 @@ $headerTextColor: #FFFFFF;
 
   height: 400px;
   width:100%;
-  margin: 1.5em;
+  margin: 0.5em;
 
   color: $headerTextColor;
 
@@ -24,3 +24,12 @@ $headerTextColor: #FFFFFF;
 .first-name{
   font-weight: bold;
 }
+
+ //when smaller than 800px
+ @media (max-width: 800px) {
+
+  .main-header {
+  margin: 0.0em;
+  }
+
+ }
